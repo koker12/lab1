@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+.page__body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page__header-list {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    height: 80px;
+    background-color: #fff;
+    list-style: none;
+    width: 100%;
+}
+
+.page__header-list-item-link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #009999;
+    padding-bottom: 2px;
+    letter-spacing: 2px;
+    transition: 300ms;
+}
+
+.page__header-list-item-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007575;
+    transform: scaleX(0);
+    transition: transform 300ms ease-out;
+    transform-origin: bottom right;
+}
+
+.page__header-list-item-link:hover::after {
+    cursor: pointer;
+    color: #007575;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.page__header-image {
+    flex: 1;
+    width: 100%;
+    background: url(../images/main_img.jpg);
+    background-size: cover;
+}
+
+.page__main {
+    padding: 50px 100px;
+    background-color: #eeeeee;
+}
+
+.page__main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page__main-section-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.page__main-section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    line-height: 130%;
+    max-width: 1120px;
+    color: #333333;
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.page__main-section-button {
+    max-width: 250px;
+    color: #fff;
+    font-weight: 700;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #009999;
+    padding: 0 40px;
+    border: none;
+    margin-bottom: 50px;
+    transition: 300ms;
+}
+.page__main-section-button:hover {
+    cursor: pointer;
+    background-color: #007575;
+}
+
+.page__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 110px;
+    padding: 0 100px;
+}
+
+.page__footer-text {
+    font-weight: 700;
+    max-width: 1120px;
+}
